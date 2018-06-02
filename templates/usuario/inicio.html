@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+Ingresar
+{% endblock %}
+
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Ingresar</title>
+</head>
+<body>
+
+						<h1 class="card-title display-4 pb-4">Iniciar sesión</h1>
+						<form method="POST"> {% csrf_token %}
+							<div class="form-group">
+							   	<input type="text" class="form-control" name="username" required=True placeholder="Nombre de usuario">
+							</div>
+							<div class="form-group">
+							   	<input type="password" class="form-control" name="password" required=True placeholder="Contraseña">
+							</div>
+							<button type="submit" class="btn btn-block btn-dark mb-2">Confirmar</button>
+						</form>
+						{%if mensaje.0%}
+
+							<h1>{{mensaje.1}}</h1>
+
+						{%endif%}
+						<br><br>
+						<a href="{% url 'password_reset' %}">¿Olvidaste tu constraseña?</a>
+						<br>
+						<a href="{% url 'registrar' %}">Registrate</a>
+
+</body>
+</html>
+{% endblock %}

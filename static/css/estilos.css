@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+}
+
+.jumbo{
+    margin-bottom: 0px;
+}
+
+.container-main{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.gestiona{
+	margin-bottom: 0px;
+	background: #263238;
+	color: #fff;
+}
+
+.registra{
+	margin-bottom: 0px;
+	background: #37474F;
+	color: #fff;
+}
+
+.visualiza{
+	margin-bottom: 0px;
+	background: #455A64;
+	color: #fff;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: inherit; 
+}
+
+.camara {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+.botom-card {
+    border: none;
+    background: #fff;
+}
+
+.form-group textarea{
+    max-height: 60px;
+    min-height: 60px;
+}
+
+.list-group-item.active {
+  background-color: #383d41;
+  border-color: #383d41;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #383d41;
+}
+
+.page-item.active .page-link {
+  background-color: #383d41;
+  border-color: #383d41;
+}
